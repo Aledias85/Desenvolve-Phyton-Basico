@@ -5,4 +5,4 @@ Faço parte do Projeto Desenvolve - Itabira
 
 Minha matrícula é o PD171.
 
-Esse repositório será da disciplina de Programação Básica Web
+Esse repositório será da disciplina de Phyton básico
