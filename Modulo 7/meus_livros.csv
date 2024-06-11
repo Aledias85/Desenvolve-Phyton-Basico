@@ -1,0 +1,29 @@
+# Informações dos livros
+livros = [
+    ["A Rede de Alice", "Kate Quinn", 2017, 503],
+    ["Anjos e Demônios", "Dan Brown", 2000, 616],
+    ["O Guardião do Tempo", "Mitch Albom", 2012, 240],
+    ["Boas Meninas Afogam e Silêncio", "Jennifer McMahon", 2015, 336],
+    ["Antes de Morrer", "Jenny Downham", 2007, 336],
+    ["Através dos Seus Olhos", "Mauricio Gomyde", 2016, 256],
+    ["Jogos Vorazes", "Suzanne Collins", 2008, 374],
+    ["O Andarilho das Sombras", "Eduardo Spohr", 2013, 569],
+    ["Os Segredos da Mente Milionária", "T. Harv Eker", 2005, 208],
+    ["Carandiru", "Drauzio Varella", 1999, 342]
+]
+
+# Nome do arquivo CSV
+nome_arquivo = "meus_livros.csv"
+
+# Abrir o arquivo para escrita
+with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:
+    # Escrever os títulos da planilha
+    arquivo.write("Título,Autor,Ano de publicação,Número de páginas\n")
+    
+    # Escrever as informações dos livros
+    for livro in livros:
+        linha = ",".join(map(str, livro)) + "\n"
+        arquivo.write(linha)
+
+print(f"Arquivo '{nome_arquivo}' criado com sucesso.")
+
